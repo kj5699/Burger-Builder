@@ -1,9 +1,8 @@
 import React from 'react';
-import Aux from '../../../hoc/Auxillary';
+import Aux from '../../../hoc/Auxillary/Auxillary';
 import Button from '../../UI/Button/Button';
 
 const orderSummary = props => {
-    console.log("Order Summary")
     const ingredientsSummary =Object.keys( props.ingredients).map(igkey => {
         return <li key={igkey}> <span>{igkey} </span>:{props.ingredients[igkey]}</li>
     })
