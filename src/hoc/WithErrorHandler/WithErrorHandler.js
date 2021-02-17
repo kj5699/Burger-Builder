@@ -21,14 +21,11 @@ const WithErrorHandler = (WrappedComponent,axios) => {
             }) 
         }
         componentWillUnmount(){
-            axios.interceptors.request.eject(this.reqInterceptor)
-            axios.interceptors.response.eject(this.resInterceptor)
+            axios.interceptors.request.eject(this.reqInterceptor);
+            axios.interceptors.response.eject(this.resInterceptor);
         }
 
         render(){
-            
-            
-
             return(
                 <Aux>
                     <Modal show={this.state.error} clicked={this.confirmedErrorHandler}>

@@ -5,7 +5,6 @@ import Button from '../../UI/Button/Button'
 
 
 const checkoutSummary = props => {
-    console.log(props.ingredients)
     return(
         <div className={classes.CheckoutSummary}>
             <div style={{width: '100%', margin: 'auto'}}>
